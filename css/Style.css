@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-weight: normal;
+}
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ff900e;
+  color: white;
+}
+
+.hero_title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+p {
+  color: #727272;
+}
+.hero_para {
+  width: 868px;
+  margin: auto;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  background-color: #ff900e;
+  padding: 20px 20px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.hero_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero_img {
+  width: 80%;
+  height: auto;
+}
+
+.quic_title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: start;
+}
+.quic_para {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: start;
+}
+.quic_section {
+  margin-top: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+  width: 1024px;
+}
+.quic_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.quic_area img {
+  width: 300px;
+}
+.feature_area {
+  margin-top: 50px !important;
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side_image img {
+  width: 100%;
+  height: 850px;
+  margin-left: 30px;
+}
+.feature-text {
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.side_text {
+  width: 600px;
+}
+.fact_area {
+  margin-top: 50px !important;
+  width: 1024px;
+  margin: 0 auto;
+}
+.card {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.card_items img {
+  mix-blend-mode: luminosity;
+}
+.card_item {
+  margin-top: 50px !important;
+  padding: 20px;
+  border: 1px solid #ff900e;
+  border-radius: 5px;
+}
+
+.card_items {
+  margin-top: 50px !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.card_items img {
+  width: 165.83px;
+  height: 50px;
+  mix-blend-mode: luminosity;
+}
+.footer {
+  margin-top: 10rem !important;
+  width: 1024px;
+  margin: auto;
+  background-color: #fff4e7;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .quic_area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .topnav a {
+    display: none;
+  }
+  .hero_para {
+    width: 100%;
+    margin: auto;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .quic_section {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .quic_area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .feature_area {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .card {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer {
+    margin-top: 10rem !important;
+    width: 100%;
+    margin: auto;
+    background-color: #fff4e7;
+    padding: 10px;
+  }
+  .fact_area {
+    margin-top: 50px !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
